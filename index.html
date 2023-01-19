@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hey, Wi-Fi - VOICEN</title>
-    <meta name="description" content="Web app to setup WiFi through sound for the VOICEN devices">
+    <title>Hey, Wi-Fi - OpenVoiceOS</title>
+    <meta name="description" content="Web app to setup WiFi through sound for OpenVoiceOS devices">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/pure-min.css">
     <style>
@@ -134,8 +134,7 @@
             text-decoration: none;
         }
     </style>
-
-    <script type="text/javascript" src="js/paho-mqtt.min.js"></script>
+    
     <script type="text/javascript" src="js/quiet.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
 </head>
@@ -168,32 +167,14 @@
                     class="pure-u-1-1 pure-button pure-button-primary">BROADCAST</button>
 
             </form>
-
-
-            <div class="table-responsive pure-u-1-2">
-                <table class="pure-table pure-table-bordered" id="devicesTable" hidden>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Devices</th>
-                        </tr>
-                    </thead>
-                    <tbody id="devices">
-                        <tr>
-                            <td>1</td>
-                            <td>192.168.10.100</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
 
     </div>
 
     <div class="footer">
-        <a href="https://github.com/voice-engine" class="footer-link">
+        <a href="https://github.com/OpenVoiceOS" class="footer-link">
             <img height="24" width="24" src="img/github.svg" />
-        </a><br>&copy; 2019 VOICEN</div>
+        </a><br>&copy; 2023 OpenVoiceOS</div>
     
     <script>
         var isIE = false || !!document.documentMode;
@@ -201,19 +182,7 @@
         if (isIE) {
             alert("IE is not supported, please use Firefox or Chrome");
             console.log("IE is not supported, please use Firefox or Chrome");
-        } else if (isEdge) {
-            alert("Edge doesn't support AES-CTR. Please use Firefox or Chrome");
-        } else if (!window.crypto) {
-            alert("Your browser does not support window.crypto. Please use Firefox or Chrome");
-        }
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150973529-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-150973529-2');
+        } 
     </script>
 </body>
 
