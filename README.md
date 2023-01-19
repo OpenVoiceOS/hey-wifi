@@ -16,7 +16,7 @@ The project is based on [quiet](https://github.com/quiet)
 + numpy
 
 ```
-sudo apt install python3-numpy python3-pycryptodome
+sudo apt install python3-numpy
 pip3 install --no-deps quiet.py    # for ARM platform
 ```
 
