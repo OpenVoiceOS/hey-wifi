@@ -20,7 +20,7 @@ sudo apt install python3-numpy
 pip3 install --no-deps quiet.py    # for ARM platform
 ```
 
->For x86, go to https://github.com/OpenVoiceOS/quiet.py to install `quiet.py`
+For x86, go to https://github.com/OpenVoiceOS/quiet.py to install `quiet.py`
 
 ### Usage
 1. run `main.py` on your device - TODO move to plugins
