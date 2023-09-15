@@ -1,9 +1,22 @@
-# Hey Wifi
+# Hey, Wifi
 
-spoken language detector for OVOS with [SpeechFlow-io/Spoken_language_identification](https://github.com/SpeechFlow-io/Spoken_language_identification)
+![](https://voice-engine.github.io/hey-wifi/img/scenario.svg)
 
+Send WiFi settings through sound wave.
 
-![](https://github.com/zhong-ying-china/Multi-Spoken-language-recognition/raw/main/fleurs.jpg)
+The project is based on [quiet](https://github.com/quiet)
+
+# Requirements
+
+needs  [ovos-PHAL-plugin-network-manager](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-network-manager) to handle wifi setup
+
+```
+pip3 install --no-deps quiet.py    # for ARM platform
+```
+
+For x86, go to https://github.com/OpenVoiceOS/quiet.py to install `quiet.py`
+
+# Config
 
 ```javascript
 "listener": {
@@ -12,3 +25,7 @@ spoken language detector for OVOS with [SpeechFlow-io/Spoken_language_identifica
     }
 }
 ```
+
+# Usage
+1. install plugin on device
+2. go to https://openvoiceos.github.io/hey-wifi using a computer or a phone

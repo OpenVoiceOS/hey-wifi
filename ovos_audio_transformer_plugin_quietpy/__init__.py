@@ -9,7 +9,7 @@ from ovos_bus_client import Message
 from ovos_plugin_manager.templates.transformers import AudioTransformer
 from ovos_utils.log import LOG
 
-PROFILES = os.path.join(dirname(os.path.abspath(__file__)), 'quiet-profiles.json')
+PROFILES = f"{dirname(__file__)}/quiet-profiles.json"
 
 
 class Decoder(Thread):
