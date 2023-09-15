@@ -1,2 +1,2 @@
-tensorflow>=2.4.1
+quiet.py
 numpy>=1.19.5
